@@ -328,6 +328,8 @@ GEM
       spree_extension
     spree_sample (3.7.10)
       spree_core (= 3.7.10)
+    spree_wallet (2.0.6)
+      spree_core
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -400,6 +402,7 @@ DEPENDENCIES
   spree (~> 3.7.0)
   spree_auth_devise (~> 3.5)
   spree_gateway (~> 3.4)
+  spree_wallet
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
