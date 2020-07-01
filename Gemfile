@@ -53,6 +53,7 @@ end
 gem 'spree', '~> 3.7.0'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
+gem 'spree_wallet' 
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
