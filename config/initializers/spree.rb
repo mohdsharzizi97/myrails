@@ -24,6 +24,8 @@ Spree.dependencies do |dependencies|
   # Example:
   # Uncomment to change the default Service handling adding Items to Cart
   # dependencies.cart_add_item_service = 'MyNewAwesomeService'
+  config.logo = 'mystore.jpg'
+  config.admin_interface_logo = 'mystore.jpg'
 end
 
 
