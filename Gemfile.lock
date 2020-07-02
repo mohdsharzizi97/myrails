@@ -70,9 +70,15 @@ GEM
     aws-sdk-kms (1.35.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
+    aws-sdk-rails (3.1.0)
+      aws-sdk-ses (~> 1)
+      railties (>= 5.2.0)
     aws-sdk-s3 (1.72.0)
       aws-sdk-core (~> 3, >= 3.102.1)
       aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-ses (1.32.0)
+      aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.1)
       aws-eventstream (~> 1, >= 1.0.2)
@@ -147,6 +153,8 @@ GEM
       activesupport (>= 4.2)
     ffaker (2.15.0)
     ffi (1.13.1)
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     friendly_id (5.2.5)
       activerecord (>= 4.0.0)
     globalid (0.4.2)
@@ -419,14 +427,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk-rails
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
+  carrierwave (~> 2.1)
   carrierwave-aws (~> 1.5)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  figaro
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  mini_magick
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.3)
